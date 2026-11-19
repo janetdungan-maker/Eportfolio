@@ -8,13 +8,10 @@
 </style>
   <title>Janet</title>
   <link rel="stylesheet" href="style.css">
- 
-
-  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-   <section id="Landing-page">
+   <section id="landing-page">
    <nav>
      <figure>
        <img id="personal-logo" src="./assets/JD_logo.jpg" alt="Janet's Logo"> <!-- JANET'S LOGO -->
@@ -23,24 +20,24 @@
       <li class="nav__link">
         <a href="#" class=
         "nav__link--anchor
-        link__hover--effect
-        link__hover--effect--black
+        link__hover-effect
+        link__hover-effect--black
         ">About
       </a>
       </li>
        <li class="nav__link">
         <a href="#" class=
         "nav__link--anchor
-        link__hover--effect
-        link__hover--effect--black
+        link__hover-effect
+        link__hover-effect--black
         ">Projects
       </a>
       </li>
        <li class="nav__link">
         <a href="#" class=
         "nav__link--anchor
-        link__hover--effect
-        link__hover--effect--black
+        link__hover-effect
+        link__hover-effect--black
         ">Contact
       </a>
       </li>
@@ -48,14 +45,13 @@
        <li class="nav__link">
         <a href="#" class=
         "nav__link--anchor
-        link__hover--effect
-        link__hover--effect--black
+        link__hover-effect
+        link__hover-effect--black
         "><i class="fa-solid fa-circle-half-stroke"></i>
       </a>
       </li>
      </ul>
    </nav>
-
    <header class="header">
     <div class="header__content">
       <h1 class="title">Hey</h1> 
@@ -64,20 +60,161 @@
       <br>
       Here's a bit more <b class="orange">about me</b>
     </p>
-  
       <div class="social__list">
-        <a href="" class="social__link">
+        <a href="#" class="social__link click">
           <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="" class="social__link">
+          <a href="#" class="social__link click">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="" class="social__link">
-            <i class="fas-solid fa-file-pdf"></i>
+          <a href="#" class="social__link click">
+            <i class="fa-solid fa-file-pdf"></i>
           </a>
         </div>
       </header>
-  </section>
-</body>
+      <button class="mail__btn click">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4><br>
+          </p>
+          <p class="modal__para">I am a 57 year old <b class="orange">frontend software engineer </b>with a strong passion for developing websites with great <b class="orange">user experiences</b>.<br>
+          I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class=orange>talented</b> and <b class="orange">experienced</b> software engineers every day.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+          <img class="modal__language--img" src="./assets/html5-original.jpg" alt="">
+          <span class="language__name">HTML</span>
+        </figure>
+          
+          <figure class="modal__language">
+          <img class="modal__language--img" src="./assets/css3-original.jpg" alt="">
+          <span class="language__name">CSS</span>
+        </figure>
+          
+          <figure class="modal__language">
+          <img class="modal__language--img" src="./assets/javascript-original.jpg" alt="">
+          <span class="language__name">Javascript</span>
+        </figure>
+          
+          <figure class="modal__language">
+          <img class="modal__language--img" src="./assets/react-original.jpg" alt="">
+          <span class="language__name">React</span>
+        </figure>            
+        </div>
+        </div> <!--end modal about-->
 
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I am open to new opportunities
+          </h3>
+
+          <form -id="contact__form" action="">
+            <div class="form__item">
+              <label class="form__item--label">Name </label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+
+            <div class="form__item">
+              <label class="form__item--label">Email </label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+
+            <div class="form__item">
+              <label class="form__item--label">Message </label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+
+          </form>
+        </div> <!--end of modal contact-->
+      </div> <!--end of modal sliding doors-->
+  </section>
+  <section id="projects">
+<div class="container">
+  <div class="row">
+    <h1 class="section__title">
+      Here are some of my <span class="orange">Projects</span>
+    </h1>
+    <ul class="project__list">
+      <li class="project">
+        <div class="project__wrapper">
+          <!-- Project content goes here -->
+           <img src="./assets/blinker mockup.png" class="project__img" alt="">
+            <div class="project__wrapper--bg"></div>
+           <div class="project__description">
+              <h3 class="project__description--title">
+                Car Sales Project
+              </h3>
+              <h4 class="project__description--sub-title">
+                HTML, CSS, JavaScript, React, Node.js, Express, MongoDB
+              </h4>
+              <p class="project__description--para">
+                Ce ne sont que des mots choisis au hasard pour remplir l'espace. Vous pouvez ne rien dire, ou dire tout ce qui vous passe par la tête ; veillez simplement à rester courtois et bienveillant.
+              </p>
+              <div class="project__description--links">
+                <a href="#" class="project__description--link">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="project__description--link">
+                  <i class="fas fa-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
+  </section> 
+
+ <!--footer section--> 
+ <footer>
+
+  <div class="container">
+    <div class="row footer__row">
+
+    
+    <figure>
+      <img class="footer__logo--img" src="./assets/JD_logo.jpg" alt="">
+    </figure>
+    <div class="footer__social--list">
+      <a href="#" class="
+      footer__social--link
+      link__hover-effect
+      link__hover-effect--white">
+    Github
+    </a>
+    <a href="#" class="
+      footer__social--link
+      link__hover-effect
+      link__hover-effect--white">
+    LinkedIn
+    </a>
+    <a href="#" class="
+      footer__social--link
+      link__hover-effect
+      link__hover-effect--white">
+    Contact
+    </a>
+    <a href="#" class="
+      footer__social--link
+      link__hover-effect
+      link__hover-effect--white">
+    Resume
+    </a>
+    </div>
+    <div class="footer__copyright">
+        <p>© 2024 Janet Dungan. All rights reserved.</p>
+    </div>
+  </div>
+ </footer>
+</body>
 </html>
