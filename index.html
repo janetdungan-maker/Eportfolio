@@ -52,6 +52,7 @@
       </li>
      </ul>
    </nav>
+
    <header class="header">
     <div class="header__content">
       <h1 class="title">Hey</h1> 
@@ -78,14 +79,16 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+      <!--MODAL-->
       <div class="modal">
-        <div class="modal__half modal__about">
+        <div class="modal__half modal__about"><!--MODAL ABOUT-->
           <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
           <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4><br>
           </p>
           <p class="modal__para">I am a 57 year old <b class="orange">frontend software engineer </b>with a strong passion for developing websites with great <b class="orange">user experiences</b>.<br>
           I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class=orange>talented</b> and <b class="orange">experienced</b> software engineers every day.
         </p>
+
         <div class="modal__languages">
           <figure class="modal__language">
           <img class="modal__language--img" src="./assets/html5-original.jpg" alt="">
@@ -109,7 +112,7 @@
         </div>
         </div> <!--end modal about-->
 
-        <div class="modal__half modal__contact">
+        <div class="modal__half modal__contact"><!--MODAL CONTACT-->
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -117,7 +120,7 @@
             I am open to new opportunities
           </h3>
 
-          <form -id="contact__form" action="">
+          <form id="contact__form" action="">
             <div class="form__item">
               <label class="form__item--label">Name </label>
               <input class="input" name="user_name" type="text" required></input>
@@ -131,8 +134,12 @@
             <div class="form__item">
               <label class="form__item--label">Message </label>
               <textarea class="input" name="message" type="text" required></textarea>
-            </div>
 
+              
+            </div>
+              <button id="contact__submit" class="form__submit">
+                Send it my way
+              </button>
           </form>
         </div> <!--end of modal contact-->
       </div> <!--end of modal sliding doors-->
