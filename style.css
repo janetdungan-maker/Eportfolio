@@ -376,7 +376,7 @@ MODAL
 }
 
 .fa-spinner {
-  animation: spinner 750ms infinite linear;
+  animation: spinner 750ms infinite linear; /* will spin nonstop */
 }
 @keyframes spinner {
   0% {
