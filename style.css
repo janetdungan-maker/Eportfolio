@@ -32,7 +32,8 @@ section {
   background-color: rgba(245, 245, 245);
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   background-color: #242424;
   color: #fff;
@@ -56,11 +57,13 @@ label {
   font-weight: bold;
   margin-bottom: auto;
 }
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #f06449;
 }
 
@@ -75,6 +78,7 @@ input:focus, textarea:focus {
   padding: 0 12px;
 }
 .click {
+  cursor: pointer;
   transition: all 300ms ease;
 }
 .click:hover {
@@ -267,7 +271,6 @@ MODAL
 .modal__languages {
   display: flex;
   flex-wrap: wrap;
-  
 }
 .modal__language {
   width: 25%;
@@ -336,15 +339,15 @@ MODAL
   transition: all 300ms ease;
 }
 .form__submit:hover {
-border-color: #fff;
-background-color: transparent
+  border-color: #fff;
+  background-color: transparent;
 }
 .form__submit:active {
   border-color: #f06449;
   color: #f06449;
 }
-.modal__overlay--loading {
-  background-color: blue;
+
+.modal__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -353,9 +356,25 @@ background-color: transparent
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 80px;
   z-index: -1;
 }
+.modal__overlay--loading {
+  background-color: #242424;
+  font-size: 80px;
+  color: white;
+}
+
+.modal__overlay--success {
+  background-color: #4bb543;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 28px;
+}
+.modal__overlay--visible {
+  z-index: 1;
+}
+
 .fa-spinner {
   animation: spinner 750ms infinite linear;
 }
@@ -367,9 +386,14 @@ background-color: transparent
     transform: rotate(360deg);
   }
 }
-
-
-
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 36px;
+  z-index: 100;
+}
 
 /* 
 
