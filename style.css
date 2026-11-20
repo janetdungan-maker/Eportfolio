@@ -42,6 +42,7 @@ input, textarea {
   border-left: none;
   border-right: none;
   height: 40px;
+  transition: all 300ms ease;
 }
 
 textarea {
@@ -54,6 +55,13 @@ label {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: auto;
+}
+input:hover, textarea:hover {
+  border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+  border-color: #f06449;
 }
 
 .container {
@@ -247,6 +255,7 @@ MODAL
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .modal__about {
   background-color: rgb(245, 245, 245, 245);
@@ -319,7 +328,46 @@ MODAL
   background-color: #f06449;
   border: 2px solid #f06449;
   color: white;
+  font-weight: 700;
+  width: 100%;
+  max-width: 240px;
+  padding: 12px 24px;
+  font-size: 20px;
+  transition: all 300ms ease;
 }
+.form__submit:hover {
+border-color: #fff;
+background-color: transparent
+}
+.form__submit:active {
+  border-color: #f06449;
+  color: #f06449;
+}
+.modal__overlay--loading {
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  z-index: -1;
+}
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 
