@@ -12,10 +12,12 @@
   border-radius: 20%;
   border: 2px solid white;
 }
+html {
+  scroll-behavior: smooth;
+}
 li {
   list-style-type: none;
 }
-
 p {
   line-height: 1.5;
   font-size: 16px;
@@ -23,16 +25,13 @@ p {
 a {
   text-decoration: none;
 }
-
 button {
   cursor: pointer;
 }
-
 section {
   background-color: rgba(245, 245, 245);
   transition: all 300ms ease;
 }
-
 input,
 textarea {
   width: 100%;
@@ -46,13 +45,11 @@ textarea {
   height: 40px;
   transition: all 300ms ease;
 }
-
 textarea {
   resize: vertical;
   height: 100px;
   margin-top: 8px;
 }
-
 label {
   font-size: 14px;
   font-weight: bold;
@@ -62,12 +59,10 @@ input:hover,
 textarea:hover {
   border-color: #dcdfe6;
 }
-
 input:focus,
 textarea:focus {
   border-color: #f06449;
 }
-
 .container {
   padding: 50px 0;
   width: 100%;
@@ -155,7 +150,6 @@ nav,
   background-color: white;
   color: #242424;
 }
-
 .dark-theme .orange {
   color: #f06449;
 }
@@ -163,9 +157,7 @@ nav,
   color: #f06449 !important;
 }
 
-/* 
-LANDING PAGE STYLING
-*/
+/*  LANDING PAGE STYLING */
 
 #landing-page {
   min-height: 100vh;
@@ -209,9 +201,10 @@ LANDING PAGE STYLING
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.5);
 }
 .scroll {
   position: absolute;
@@ -245,9 +238,7 @@ LANDING PAGE STYLING
   }
 }
 
-/* 
-NAVIGATION  
-*/
+/*  NAVIGATION  */
 
 nav {
   /* split up logo and links to opposite sides of nav bar */
@@ -277,11 +268,8 @@ nav {
   font-size: 20px;
 }
 
-/* 
+/* MODAL*/ 
 
-MODAL
-
-*/
 .modal {
   position: absolute;
   top: 50%;
@@ -300,7 +288,6 @@ MODAL
     z-index 1s,
     box-shadow 0.5s ease;
 }
-
 .modal--open .modal {
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
@@ -336,23 +323,19 @@ MODAL
   align-items: center;
   transition: all 300ms ease;
 }
-
 .modal__language:hover .language__name {
   transform: scale(1);
 }
-
 .modal__language:hover {
   filter: brightness(80%);
   transform: scale (0.9);
 }
-
 .language__name {
   position: absolute;
   bottom: -10px;
   transform: scale(0);
   transition: all 300ms ease;
 }
-
 .modal__language--img {
   width: 100%;
   max-width: 70px;
@@ -367,7 +350,6 @@ MODAL
 .modal__title {
   font-size: 26px;
 }
-
 .modal__sub-title {
   margin: 12px 0 24px 0;
   font-size: 14px;
@@ -398,7 +380,6 @@ MODAL
   border-color: #f06449;
   color: #f06449;
 }
-
 .modal__overlay {
   position: absolute;
   top: 0;
@@ -415,7 +396,6 @@ MODAL
   font-size: 80px;
   color: white;
 }
-
 .modal__overlay--success {
   background-color: #4bb543;
   font-size: 40px;
@@ -427,7 +407,6 @@ MODAL
   z-index: 1;
   display: flex;
 }
-
 .fa-spinner {
   animation: spinner 750ms infinite linear; /* will spin nonstop */
 }
@@ -448,11 +427,7 @@ MODAL
   z-index: 100;
 }
 
-/* 
-
-PROJECTS 
-
-*/
+/* PROJECTS */
 
 .section__title {
   font-size: 48px;
@@ -525,9 +500,7 @@ PROJECTS
   margin: 16px 0;
 }
 
-/*
-FOOTER
-*/
+/* FOOTER */
 
 footer {
   position: relative;
@@ -553,13 +526,11 @@ footer {
   justify-content: space-around;
   margin: 28px 0;
 }
-
 .footer__social--link,
 .footer__copyright {
   color: white;
 }
-/*
-SHAPES
+/* SHAPES
 
 shapes on first row
 height = 35vh
@@ -578,8 +549,8 @@ width = 50vw
 
 shapes on third column
 width = 80vw
-
 */
+
 .shape {
   position: fixed;
 }
@@ -654,6 +625,21 @@ width = 80vw
   .nav__link:first-child {
     display: none;
   }
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+.project__description--sub-title {
+  margin-bottom:  8px;
+}
+.modal_half {
+  padding: 40px;
+}
 }
 
 /* end of phone section */
