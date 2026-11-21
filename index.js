@@ -1,6 +1,15 @@
-// template_uxwxufd
-// service_v9nzxg5
-// vMSW9pyQ5TS2HCDBB
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList.add("dark-theme");
+  } 
+  else {
+    document.body.classList.remove("dark-theme");
+  }
+}
 
 function contact(event) {
   //promise
@@ -31,14 +40,12 @@ function contact(event) {
       );
     });
 }
-let isModalOpen = false;
 
 function toggleModal() {
   isModalOpen = !isModalOpen;
   if (isModalOpen) {
-     
     return document.body.classList.remove("modal--open");
-   isModalOpen = false;
+    isModalOpen = false;
   }
   isModalOpen = false;
   // toggle modal

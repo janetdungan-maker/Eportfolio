@@ -118,17 +118,29 @@ textarea:focus {
   left: 0;
   width: 100%;
 }
-nav, .scroll, .header {
+nav,
+.scroll,
+.header {
   opacity: 1;
   visibility: visible;
-  transition: all 600ms;
+  transition: all 600ms 800ms;
 }
-.modal--open nav, .modal--open .scroll, .modal--open .header {
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
   opacity: 0;
   visibility: hidden;
-  transition: all 600ms;
+  transition: all 600ms 200ms;
 }
 
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para .nav__link--anchor {
+  color: white;
+}
 
 /* 
 LANDING PAGE STYLING
@@ -263,8 +275,11 @@ MODAL
   overflow: hidden;
   display: flex;
   visibility: hidden;
-  z-index: -1;  
-  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  z-index: -1;
+  transition:
+    visibility 1s,
+    z-index 1s,
+    box-shadow 0.5s ease;
 }
 
 .modal--open .modal {
@@ -281,8 +296,8 @@ MODAL
   position: relative;
   transition: all 300ms ease-in;
 }
-  .modal--open .modal__about,
-  .modal--open .modal__contact {
+.modal--open .modal__about,
+.modal--open .modal__contact {
   transform: translateX(0%);
 }
 .modal__about {
