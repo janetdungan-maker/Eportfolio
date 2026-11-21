@@ -30,6 +30,7 @@ button {
 
 section {
   background-color: rgba(245, 245, 245);
+  transition: all 300ms ease;
 }
 
 input,
@@ -132,14 +133,34 @@ nav,
   visibility: hidden;
   transition: all 600ms 200ms;
 }
-
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para .nav__link--anchor {
+.dark-theme .header__para, .nav__link--anchor {
   color: white;
+}
+.dark-theme section {
+  background-color: #242424;
+}
+.dark-theme .scroll__icon {
+ border-color: white;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black::after {
+  background-color: white;
+}
+.dark-theme .mail__btn {
+  background-color: white;
+  color: #242424;
+}
+
+.dark-theme .orange {
+  color: #f06449;
+}
+.orange {
+  color: #f06449 !important;
 }
 
 /* 
@@ -225,9 +246,7 @@ LANDING PAGE STYLING
 }
 
 /* 
-
 NAVIGATION  
-
 */
 
 nav {
@@ -507,12 +526,11 @@ PROJECTS
 }
 
 /*
-
 FOOTER
-
 */
 
 footer {
+  position: relative;
   background-color: #242424;
   display: flex;
   padding: 6% 0;
@@ -540,3 +558,103 @@ footer {
 .footer__copyright {
   color: white;
 }
+/*
+SHAPES
+
+shapes on first row
+height = 35vh
+
+shapes on second row
+height = 70vh
+
+shapes on third row
+height = 95vh
+
+shapes on first column
+width = 5vw
+
+shapes on second column
+width = 50vw
+
+shapes on third column
+width = 80vw
+
+*/
+.shape {
+  position: fixed;
+}
+.shape--0 {
+  top: 15vh;
+  left: 5vw;
+}
+.shape--1 {
+ top: 15vh;
+ left: 50vw;
+}
+.shape--2 {
+  top: 15vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 50vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 50vh;
+  left: 50vw;
+}
+.shape--5 {
+  top: 50vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 80vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 80vh;
+  left: 50vw;
+}
+.shape--8 {
+  top: 80vh;
+  left: 80vw;
+}
+
+/* small phones, tablets, large smart phones */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .header__para {
+    font-size: 20px;
+  }
+  .modal {
+    top: 0;
+    left: 0;
+    height: auto;
+    transform: none;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+  .modal__half {
+    width: 100%;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+}
+
+/* end of phone section */
+
